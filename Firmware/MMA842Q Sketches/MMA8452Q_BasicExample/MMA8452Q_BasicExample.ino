@@ -40,7 +40,7 @@ void setup()
   Serial.begin(57600);
   Serial.println("MMA8452 Basic Example");
 
-  Wire.begin(); //Join the bus as a master
+  Wire.begin(4, 5); //Join the bus as a master
 
   initMMA8452(); //Test and intialize the MMA8452
 }
